@@ -24,5 +24,6 @@ var onRun = function(context) {
         });
         var parent = group == "none" ? document.selectedPage : document.getLayerWithID(group);
         parent.layers.push(newGroup);
+        newGroup.adjustToFit();
     }
 };
